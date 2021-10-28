@@ -1,0 +1,29 @@
+.carouselImg{
+    width: 100%;
+    background-size: cover;
+    height: 90vh;
+}
+.carousel_about h1{
+    width: 75%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.carousel_about h4{
+    margin-bottom: 10rem;
+}
+
+@media (max-width:667px){
+    .carousel_about h1{
+        width: 100%;
+        margin: auto;
+    }
+    .carousel_about h4{
+        width: 100%;
+        margin: 0;
+    }
+    .carouselImg{
+        height: 100%;
+    }
+
+      
+}
