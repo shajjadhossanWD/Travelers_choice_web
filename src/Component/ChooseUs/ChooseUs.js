@@ -13,7 +13,7 @@ const ChooseUs = () => {
             {/* 1st card.....................   */}
                <Col>
                <Card className="About_Card">
-               <Card.Header><i class="fas fa-user-tie eventIcon"></i></Card.Header>
+               <Card.Header><i className="fas fa-user-tie eventIcon"></i></Card.Header>
                     <Card.Body>
                     <Card.Title>2000+ Our <br /> worldwide guide</Card.Title>
                     </Card.Body>
@@ -24,7 +24,7 @@ const ChooseUs = () => {
 
                <Col>
                <Card  className="About_Card">
-               <Card.Header><i class="fas fa-handshake eventIcon"></i></Card.Header>
+               <Card.Header><i className="fas fa-handshake eventIcon"></i></Card.Header>
                     <Card.Body>
                     <Card.Title>100% trusted travel agency </Card.Title>
                     </Card.Body>
@@ -35,7 +35,7 @@ const ChooseUs = () => {
 
                 <Col>
                 <Card className="About_Card">
-               <Card.Header><i class="fas fa-car-side eventIcon"></i></Card.Header>
+               <Card.Header><i className="fas fa-car-side eventIcon"></i></Card.Header>
                     <Card.Body>
                     <Card.Title>10+ year of travel experience</Card.Title>
                     </Card.Body>
@@ -46,7 +46,7 @@ const ChooseUs = () => {
 
                 <Col>
                 <Card className="About_Card">
-               <Card.Header><i class="fas fa-users eventIcon"></i></Card.Header>
+               <Card.Header><i className="fas fa-users eventIcon"></i></Card.Header>
                     <Card.Body>
                     <Card.Title>90% of our traveller happy</Card.Title>
                     </Card.Body>

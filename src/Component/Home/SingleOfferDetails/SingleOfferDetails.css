@@ -18,7 +18,7 @@
     color: tomato;
     font-size: 1.5rem;
 }
-.details h2{
+.ratingDiv h1{
     color: tomato;
 }
 .details h1 span{
@@ -40,4 +40,12 @@
 }
 a{
     text-decoration: none;
+}
+.inputData{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid tomato;
+    border-radius: 10px;
+    
 }
