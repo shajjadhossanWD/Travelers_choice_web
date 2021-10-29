@@ -1,0 +1,22 @@
+.chooseUsDiv{
+    background-image: url('https://i.ibb.co/XVtyKdV/achiv-shape.png');
+    width: 100%;
+    background-size: cover;
+    margin: 40px 0;
+    padding: 20px;
+}
+.About_Card{
+    color: white;
+    background-color: #0a3d62;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 40px 0;
+}
+.About_Card:hover{
+    transform: scale(1.04);
+    transition: 0.5s ease-in;
+}
+.eventIcon{
+    font-size: 4rem;
+    color: white;
+}

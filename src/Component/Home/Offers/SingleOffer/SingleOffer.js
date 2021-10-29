@@ -1,8 +1,9 @@
 import React from 'react';
 import { ButtonGroup, Card, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const SingleOffer = (props) => {
-    const {name, title, img} = props.offer;
+    const {name, title, img, _id} = props.offer;
     return (
     <Col>
       <Card>
@@ -12,7 +13,9 @@ const SingleOffer = (props) => {
           <Card.Text>
            {title}
           </Card.Text>
-          <ButtonGroup className="button">Book Now</ButtonGroup>
+          <Link to={`/offers/${_id}`}>
+                <ButtonGroup className="button btn btn-primary">Book Now</ButtonGroup>
+                </Link>
         </Card.Body>
       </Card>
     </Col>

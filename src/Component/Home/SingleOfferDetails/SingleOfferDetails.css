@@ -1,0 +1,43 @@
+.detailsImg{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.ibb.co/Yp6jMfV/breadcrumb-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 80px;
+}
+.detailsImg h1{
+    color: tomato;
+}
+.details{
+    text-align: justify;
+}
+.ratingDiv{
+    text-align: start;
+}
+.ratings{
+    color: tomato;
+    font-size: 1.5rem;
+}
+.details h2{
+    color: tomato;
+}
+.details h1 span{
+    color: tomato;
+}
+.ratingDiv h5 span{
+    color: tomato;
+}
+.button{
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+.button:hover{
+    letter-spacing: 2px;
+    transition: 0.4s ease-in;
+}
+a{
+    text-decoration: none;
+}
