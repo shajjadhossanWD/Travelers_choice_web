@@ -6,10 +6,11 @@ import './SingleOfferDetails.css';
 import Rating from 'react-rating';
 import { useForm } from 'react-hook-form';
 import useAuth from '../../../Hooks/useAuth';
+import axios from 'axios';
 
 const SignleOfferDetails = () => {
     const { id } = useParams();
-    const [offers, setOffers] = useState({});
+    const [offers, setOffers] = useState({name: '' , img: ''});
     const {user} = useAuth();
     useEffect(() => {
         fetch('https://rocky-tor-45651.herokuapp.com/tourOffers')
@@ -20,15 +21,21 @@ const SignleOfferDetails = () => {
             })
     }, [])
 
-    const { register, handleSubmit } = useForm();
-    const onSubmit = data => {
-        console.log(data);
+    const { register, handleSubmit, reset } = useForm();
 
-    };
+    const onSubmit = data => {
+       axios.post("https://rocky-tor-45651.herokuapp.com/chooseOffers", data)
+       .then(res => {
+           if(res.data.insertedId){
+               alert('added successfully')
+               reset();
+           }
+       })
+     }
 
     return (
         <div>
-            <div className="detailsImg">
+            <div className="Img_section">
                 <h1>Tour Package Details</h1>
             </div>
             <div className="container my-5 row mx-auto">
@@ -57,8 +64,9 @@ const SignleOfferDetails = () => {
                         <input className="inputData" {...register("email")} value={user.email || ''}/>
                         <input className="inputData" {...register("date")} placeholder="booking date" />
                         <input className="inputData" {...register("address")} placeholder="your current address"/>
-                        <input className="inputData" {...register("bookingItems")} value={offers.name || ''} />
-                        <input className="inputData" type="number" {...register("Price")} placeholder="price" />
+                        <input className="inputData" {...register("bookingItems")} defaultValue={offers.name} />
+                        <input className="inputData" {...register("itemsImg")} defaultValue={offers.img} />
+                        <input className="inputData" type="number" {...register("Price")} defaultValue={offers.price} />
                         <input className="inputData button" type="submit" />
                     </form>
                 </div>

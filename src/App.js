@@ -10,6 +10,8 @@ import SignIn from './Component/SignIn/SignIn'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Footer from './Component/Footer/Footer';
+import MyOrders from './Component/MyOrders/MyOrders';
+import AddOffers from './Component/AddOffers/AddOffers';
 
 
 
@@ -29,6 +31,12 @@ function App() {
           <PrivateRoute path="/offers/:id">
             <SignleOfferDetails></SignleOfferDetails>
           </PrivateRoute>
+          <Route path="/my_orders">
+            <MyOrders></MyOrders>
+          </Route>
+          <Route path="/add_new_offers">
+            <AddOffers></AddOffers>
+          </Route>
           <Route path="/signIn">
              <SignIn></SignIn>
           </Route>

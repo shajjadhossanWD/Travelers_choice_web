@@ -1,20 +1,10 @@
 import React from 'react';
-import { useEffect } from 'react';
-import { useState } from 'react';
 import { Row } from 'react-bootstrap';
+import useOffers from '../../../Hooks/useOffers';
 import SingleOffer from './SingleOffer/SingleOffer';
 
 const Offers = () => {
-    const [offers, setOffers] = useState([]);
-    
-    useEffect(()=>{
-       fetch('https://rocky-tor-45651.herokuapp.com/tourOffers')
-       .then(res => res.json())
-       .then(result => {
-           setOffers(result);
-           console.log(result);
-       })
-    },[])
+    const {offers} = useOffers()
 
     return (
         <div className="container my-5">
