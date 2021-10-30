@@ -43,8 +43,8 @@ class AboutUs extends Component {
   
     return (
         <div className="mb-5 mt-5">
-        <h4>Our Traveller Say</h4>
-        <h1>What Oue Traveller Say <br /> About Us</h1>
+        <h4 style={{color: 'tomato'}}>Our Traveller Say</h4>
+        <h1 style={{color: '#0a3d62'}}>What Oue Traveller Say <br /> About Us</h1>
         <Slider {...settings}>
           <div>
             <div className="traveller">

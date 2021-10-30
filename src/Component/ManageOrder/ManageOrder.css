@@ -1,0 +1,26 @@
+.manage_img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://i.ibb.co/NKDf2gk/page-banner.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 10rem;
+}
+.manageAllOrder{
+    text-align: justify;
+}
+.manageCard{
+   background-color:#0a3d62 ;
+   color: white;
+}
+.manage-btn{
+    background-color: tomato;
+    padding: 5px 15px;
+    border: none;
+    margin-top: 10px;
+}
+.manage-btn:hover{
+    background-color: white;
+    color: #0a3d62;
+    letter-spacing: 2px;
+    transition: 0.5s ease-in;
+}

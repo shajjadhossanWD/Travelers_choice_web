@@ -12,8 +12,11 @@ import "slick-carousel/slick/slick-theme.css";
 import Footer from './Component/Footer/Footer';
 import MyOrders from './Component/MyOrders/MyOrders';
 import AddOffers from './Component/AddOffers/AddOffers';
+import ManageOrder from './Component/ManageOrder/ManageOrder';
 
-
+//========================================
+ //    NOT FOUND PAGE KORTe
+ // -----==================================
 
 function App() {
   return (
@@ -36,6 +39,9 @@ function App() {
           </Route>
           <Route path="/add_new_offers">
             <AddOffers></AddOffers>
+          </Route>
+          <Route path="/manage_all_orders">
+            <ManageOrder></ManageOrder>
           </Route>
           <Route path="/signIn">
              <SignIn></SignIn>

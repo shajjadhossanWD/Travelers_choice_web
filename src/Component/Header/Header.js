@@ -6,6 +6,7 @@ import './Header.css';
 
 const Header = () => {
     const {user, logOut} = useAuth();
+    console.log(user)
     return (
         <Navbar collapseOnSelect expand="lg" className="header" sticky="top" variant="dark">
         <Container>
@@ -20,7 +21,7 @@ const Header = () => {
                 <Nav.Link  as={Link} to="/my_orders">My Orders</Nav.Link>
                 <Nav.Link as={Link} to="/manage_all_orders">Manage All Orders</Nav.Link>
                 <Nav.Link as={Link} to="/add_new_offers">Add New Offers</Nav.Link>
-                <Nav.Link>SignIn as: <b>{user.displayName}</b></Nav.Link>
+                <Nav.Link> <p className="imgP"><img src={user.photoURL} alt="" className="photoUrl"/></p> <b className="userName">{user.displayName}</b></Nav.Link>
                 <Nav.Link style={{color: "tomato", borderBottom:"1px solid tomato"}} onClick={logOut}>Logout</Nav.Link>
                 </>:
                 <Nav.Link style={{color: "tomato", borderBottom:"1px solid tomato"}} as={Link} to="/signIn" >SignIn</Nav.Link>} 

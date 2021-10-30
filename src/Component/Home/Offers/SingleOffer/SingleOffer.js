@@ -6,10 +6,10 @@ const SingleOffer = (props) => {
     const {name, title, img, _id} = props.offer;
     return (
     <Col>
-      <Card>
+      <Card style={{width:"100%", height:"100%", backgroundColor:"#0a3d62", color: "white"}}>
         <Card.Img variant="top" src={img} />
         <Card.Body>
-          <Card.Title>{name}</Card.Title>
+          <Card.Title style={{color: "tomato"}}>{name}</Card.Title>
           <Card.Text>
            {title}
           </Card.Text>

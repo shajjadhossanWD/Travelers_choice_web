@@ -5,17 +5,17 @@ import './ChooseUs.css';
 const ChooseUs = () => {
     return (
         <div className="chooseUsDiv">
-            <h4>Why Travelo?</h4>
-            <h1>Why You Are <br /> Travel With Travelo</h1>
+            <h4 style={{color: 'tomato'}}>Why Travelo?</h4>
+            <h1 style={{color: '#0a3d62'}}>Why You Are <br /> Travel With Travelo</h1>
 
             <Row xs={1} sm={1} md={2} lg={4} className="container mx-auto"> 
 
             {/* 1st card.....................   */}
                <Col>
-               <Card className="About_Card">
-               <Card.Header><i className="fas fa-user-tie eventIcon"></i></Card.Header>
+               <Card className="About_Card" >
+               <Card.Header><i className="fas fa-user-tie eventIcon" style={{color: 'tomato'}}></i></Card.Header>
                     <Card.Body>
-                    <Card.Title>2000+ Our <br /> worldwide guide</Card.Title>
+                    <Card.Title>2000+ Our worldwide guide</Card.Title>
                     </Card.Body>
                 </Card>
                 </Col>
@@ -24,9 +24,9 @@ const ChooseUs = () => {
 
                <Col>
                <Card  className="About_Card">
-               <Card.Header><i className="fas fa-handshake eventIcon"></i></Card.Header>
+               <Card.Header><i className="fas fa-handshake eventIcon" style={{color: 'tomato'}}></i></Card.Header>
                     <Card.Body>
-                    <Card.Title>100% trusted travel agency </Card.Title>
+                    <Card.Title>100% trusted travel agency service </Card.Title>
                     </Card.Body>
                 </Card>
                 </Col>
@@ -35,7 +35,7 @@ const ChooseUs = () => {
 
                 <Col>
                 <Card className="About_Card">
-               <Card.Header><i className="fas fa-car-side eventIcon"></i></Card.Header>
+               <Card.Header><i className="fas fa-car-side eventIcon" style={{color: 'tomato'}}></i></Card.Header>
                     <Card.Body>
                     <Card.Title>10+ year of travel experience</Card.Title>
                     </Card.Body>
@@ -46,9 +46,9 @@ const ChooseUs = () => {
 
                 <Col>
                 <Card className="About_Card">
-               <Card.Header><i className="fas fa-users eventIcon"></i></Card.Header>
+               <Card.Header><i className="fas fa-users eventIcon" style={{color: 'tomato'}}></i></Card.Header>
                     <Card.Body>
-                    <Card.Title>90% of our traveller happy</Card.Title>
+                    <Card.Title>90% of our traveller is happy </Card.Title>
                     </Card.Body>
                 </Card>
                  </Col>

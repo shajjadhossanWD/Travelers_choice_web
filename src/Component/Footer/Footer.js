@@ -25,11 +25,6 @@ const Footer = () => {
                     <p><b>shajjadhossan124@gamil.com</b></p>
                     <p><b>traveloweb54@gamil.com</b></p>
                </div>
-               <div className="contactAddress">
-                    <p><i className="fas fa-map-marked-alt fs-1"></i></p>
-                    <p><b>Dhanmondi-1287, Road No: 12</b></p>
-                    <p><b>Dhaka Bangladesh</b></p>
-               </div>
             </div>
             <div className="col-lg-4 mb-4 Operation_time">
               <h2 className="timecls">Support</h2>

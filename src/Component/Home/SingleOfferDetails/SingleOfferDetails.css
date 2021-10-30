@@ -37,6 +37,8 @@
 .button:hover{
     letter-spacing: 2px;
     transition: 0.4s ease-in;
+    background-color: white;
+    color: #0a3d62;
 }
 a{
     text-decoration: none;

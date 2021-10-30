@@ -1,3 +1,16 @@
 .header{
     background-color: #0a3d62;
 }
+.imgP{
+    display: inline-block;
+    margin-right: -32px;
+    margin-bottom: -20px;
+}
+.photoUrl{
+    width: 30%;
+    height: 40%;
+    border-radius: 50%;
+}
+.userName{
+    margin-right: 32px;
+}

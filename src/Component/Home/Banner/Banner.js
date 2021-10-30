@@ -10,7 +10,7 @@ const Banner = () => {
                 src="https://i.ibb.co/rFJLZFG/main-slider-1-1.jpg"
                 alt="First slide"
                 />  
-                <Carousel.Caption className="bannerCaption">
+                <Carousel.Caption className="carousel_about">
                 <h1 className="text-white"> Amazing Tour</h1>
                 <h1 className=" mx-auto">In Indonesia</h1>
                 <h4 className="mx-auto">7 Days & 8 Night Tour</h4>

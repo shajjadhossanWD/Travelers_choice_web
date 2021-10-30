@@ -8,8 +8,8 @@ const Offers = () => {
 
     return (
         <div className="container my-5">
-            <h4>Choose Your Offers</h4>
-            <h1>Select Your Best Offers <br /> For Your Travel</h1>
+            <h4 style={{color: 'tomato'}}>Choose Your Offers</h4>
+            <h1 style={{color:'#0a3d62', marginBottom: '20px'}}>Select Your Best Offers <br /> For Your Travel</h1>
             <Row xs={1} md={2} lg={3} className="g-4">
                {
                    offers.map(offer => <SingleOffer key = {offer.id} offer={offer}></SingleOffer>)

@@ -45,9 +45,10 @@ const MyOrders = () => {
             </div>
              
              <h1 className="my-5">My Orders</h1>
-            <Row sm={1} md={2} lg={3} className="container mx-auto g-4 mb-5" >
+            <Row xs={1} md={2} lg={3}  className="container mx-auto g-4 mb-5" >
                {
-                   orders.map(order => <Col>
+                   orders.map(order => (
+                    <Col>
                     <Card>
                         <Card.Img variant="top" src={order.itemsImg} />
                         <Card.Body>
@@ -58,7 +59,8 @@ const MyOrders = () => {
                         <ButtonGroup onClick={()=> handleDelete(order._id)} className="btn btn-danger p-2">Delete</ButtonGroup>
                         </Card.Body>
                     </Card>
-                   </Col>)
+                   </Col>
+                   ))
                }
             </Row>
         </div>
