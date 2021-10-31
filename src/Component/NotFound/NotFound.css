@@ -1,0 +1,18 @@
+.notFound{
+    background-color: #FCF9F4;
+}
+.notFound h2{
+    color:#0a3d6270;
+    text-align: center;
+}
+.notFound p{
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+p a{
+    color: white;
+    background-color:tomato;
+    padding: 6px 10px;
+    text-decoration: none;
+    border-radius: 10px;
+}

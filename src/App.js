@@ -13,10 +13,7 @@ import Footer from './Component/Footer/Footer';
 import MyOrders from './Component/MyOrders/MyOrders';
 import AddOffers from './Component/AddOffers/AddOffers';
 import ManageOrder from './Component/ManageOrder/ManageOrder';
-
-//========================================
- //    NOT FOUND PAGE KORTe
- // -----==================================
+import NotFound from './Component/NotFound/NotFound';
 
 function App() {
   return (
@@ -45,6 +42,9 @@ function App() {
           </PrivateRoute>
           <Route path="/signIn">
              <SignIn></SignIn>
+          </Route>
+          <Route path="*">
+            <NotFound></NotFound>
           </Route>
         </Switch>
         <Footer></Footer>
