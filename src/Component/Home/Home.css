@@ -1,0 +1,16 @@
+.traveloCard{
+    text-align: justify;
+    background-color: #F8F8F8;
+}
+.TraveloImg{
+    background-image: url('https://i.ibb.co/bQdTMx1/mission-vision.webp');
+    width: 100%;
+    background-size: cover;
+}
+.titlee{
+    background-color: #0a3d6270;
+    color: white;
+    padding: 30px;
+    width: 50%;
+    height: 25%;
+}

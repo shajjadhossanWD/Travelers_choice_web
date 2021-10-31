@@ -34,15 +34,15 @@ function App() {
           <PrivateRoute path="/offers/:id">
             <SignleOfferDetails></SignleOfferDetails>
           </PrivateRoute>
-          <Route path="/my_orders">
+          <PrivateRoute path="/my_orders">
             <MyOrders></MyOrders>
-          </Route>
-          <Route path="/add_new_offers">
+          </PrivateRoute>
+          <PrivateRoute path="/add_new_offers">
             <AddOffers></AddOffers>
-          </Route>
-          <Route path="/manage_all_orders">
+          </PrivateRoute>
+          <PrivateRoute path="/manage_all_orders">
             <ManageOrder></ManageOrder>
-          </Route>
+          </PrivateRoute>
           <Route path="/signIn">
              <SignIn></SignIn>
           </Route>

@@ -1,0 +1,24 @@
+.pending_btn{
+    margin-right: 2rem;
+}
+.inputStatus{
+    display: none;
+}
+.manage-btn:hover{
+   color: #0a3d62;
+}
+.pending_btn{
+    background-color: rgb(82, 82, 221);
+    padding: 5px 12px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.spinner_div{
+    margin-left: 25rem;
+}
+
+@media (max-width:625px){
+    .spinner_div{
+        margin-left: 2rem;
+    }
+}

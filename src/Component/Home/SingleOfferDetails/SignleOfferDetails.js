@@ -12,6 +12,9 @@ const SignleOfferDetails = () => {
     const { id } = useParams();
     const [offers, setOffers] = useState({name: '' , img: ''});
     const {user} = useAuth();
+
+    // get all offers data -----------------
+
     useEffect(() => {
         fetch('https://rocky-tor-45651.herokuapp.com/tourOffers')
             .then(res => res.json())
@@ -20,11 +23,14 @@ const SignleOfferDetails = () => {
                 setOffers(data);
             })
     }, [])
+    
 
+    // react hook form ----------------------------
+    
     const { register, handleSubmit, reset } = useForm();
 
     const onSubmit = data => {
-       axios.post("https://rocky-tor-45651.herokuapp.com/chooseOffers", data)
+        axios.post("https://rocky-tor-45651.herokuapp.com/chooseOffers", data)
        .then(res => {
            if(res.data.insertedId){
                alert('added successfully')

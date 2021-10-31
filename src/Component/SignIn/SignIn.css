@@ -1,0 +1,16 @@
+.signIn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.cardLogIn{
+    padding: 70px;
+    border-radius: 10px;
+    box-shadow: 0.4px 0.5px 10px 0.5px rgba(109, 103, 103, 0.377);
+}
+.card h1{
+    color: #0a3d62;
+    margin-bottom: 20px;
+
+}

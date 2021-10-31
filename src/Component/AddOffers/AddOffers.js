@@ -25,7 +25,7 @@ const AddOffers = () => {
                 <h1>Add Your Favourite Tourism Offer</h1>
             </div>
 
-            <div className="addForm">
+            <div className="addForm my-5">
                   <h1>Add Your Offers</h1>               
                   <form onSubmit={handleSubmit(onSubmit)} className="addInput mx-auto">
                         <input className="inputData" {...register("name")} placeholder="offers name" />

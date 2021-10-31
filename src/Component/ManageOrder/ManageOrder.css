@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     height: 100%;
     padding: 10rem;
+    width: 100%;
 }
 .manageAllOrder{
     text-align: justify;
@@ -14,7 +15,20 @@
 }
 .manage-btn{
     background-color: tomato;
-    padding: 5px 15px;
+    padding: 5px 12px;
+    border: none;
+    margin-top: 10px;
+}
+.manageBtn{
+    background-color: rgb(82, 82, 221);
+    padding: 5px 12px;
+    border: none;
+    margin-top: 10px;
+    margin-right: 8px;
+}
+.managePending{
+    background-color: transparent;
+    padding: 5px 12px;
     border: none;
     margin-top: 10px;
 }
